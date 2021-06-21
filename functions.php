@@ -10,7 +10,7 @@ if (is_shop()){
      $tax_query[] = array(
             'taxonomy' => 'product_cat',
             'field' => 'slug',
-            'terms' => array( 'profesionalna-primena' ), // Don't display products in the clothing category on the shop page.
+            'terms' => array( 'category-slug', 'category-slug-2' ), // Don't display products in the clothing category on the shop page.
             'operator' => 'NOT IN'
      );
  
